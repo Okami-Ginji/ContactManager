@@ -55,7 +55,8 @@ public class ContactManager extends Menu<String>{
                 firstName = strSplit[0];
                 lastName =  strSplit[1];
         }
-        catch(Exception e) {           
+        catch(Exception e) {     
+            lastName = "  ";
         }
        
         list.add(new Contact(contactId, name, group, address,
